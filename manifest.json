@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Random login/password filler",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "description": "This extension autofill password on click.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
