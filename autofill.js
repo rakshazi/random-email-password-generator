@@ -59,10 +59,6 @@ var collect = {
     },
 }
 
-//Load options
-chrome.storage.sync.get(['domain', 'passwordLength'], function(items) {
-    window.randomAutofillOptions = items;
-});
 //Prepare fields
 var loginFields = collect.login();
 var emailFields = collect.email();
